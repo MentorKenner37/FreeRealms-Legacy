@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <TargetFramework>$(TargetFramework)</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ZLibDotNet" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sanctuary.Database.MySql\Sanctuary.Database.MySql.csproj" />
+    <ProjectReference Include="..\Sanctuary.Database.Sqlite\Sanctuary.Database.Sqlite.csproj" />
+  </ItemGroup>
+
+</Project>
